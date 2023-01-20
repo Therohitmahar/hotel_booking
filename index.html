@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romo Hotel</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -158,7 +159,7 @@
             </div>
             <div class="content mtop">
                 <div class="owl-carousel owl-carousel1 owl-theme">
-                    <div class="items">
+                    <div class="items" >
                         <div class="image">
                             <img src="img/room1.jpg" alt="">
                         </div>
@@ -177,7 +178,7 @@
                             </p>
                             <div class="button flex">
                                 <button class="primary-btn">BOOK NOW</button>
-                                <h3>Rs. 1099 <span><br>Per Night</span></h3>
+                                <h3>Rs. 0099 <span><br>Per Night</span></h3>
                             </div>
                         </div>
                     </div>
@@ -326,7 +327,7 @@
 
 <!-- rooms -->
 <!-- services -->
-  <section class="services top">
+  <section class="services top" style="margin: 40px;">
     <div class="container">
         <div class="heading">
             <h1>SERVICES</h1>
@@ -339,14 +340,70 @@
             <div class="left grid2">
                 <div class="box">
                     <div class="text">
-                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <i class="fa-solid fa-champagne-glasses"></i> 
+                        <h3>Delious Food</h3>
+                    </div>
+                </div> 
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-person-biking"></i> 
+                        <h3>Fitness</h3>
                     </div>
                 </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-utensils"></i> 
+                        <h3>Inhouse Restaurant</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-spa"></i> 
+                        <h3>Beauty Spa</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="img/services.jpg" alt="">
             </div>
         </div>
     </div>
   </section>
 <!-- services -->
+<!-- Customer -->
+<section class="customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+<div class="item">
+    <i class="fa-solid fa-quote-right"></i>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum cum facere ratione fuga facilis nulla culpa. Laudantium, commodi sunt?</p>
+    <h3>Rohit Mahar</h3>
+    <label>Rohit Mahar</label>
+</div>
+        </div>
+    </div>
+</section>
+<script>
+    $('.owl-carousel').owlCarousel({
+     loop:true,
+     margin:0,
+     nav:false,
+     dots:true,
+      responsive:{
+         0:{
+             items:1
+         },
+         768:{
+             items:1,
+             
+         },
+         1000:{
+             items:1
+         }
+     }
+ })
+ </script>
+<!-- Customer -->
 
 
 
