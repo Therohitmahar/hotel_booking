@@ -352,24 +352,23 @@ h1{
 .customer{
     background-image: url(img/lobby.jpg);
     background-size: cover;
-    background-color: #f78843;
-    opacity: 50%;
-    background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
     color: #fff;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .customer .container{
     max-width: 70%;
-
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
 }
 
 .customer .item{
     padding: 10%;
-    
-
 }
 
 .customer i{
