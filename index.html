@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romo Hotel</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +16,7 @@
 </head>
 <body>
     <header>
-        <div class="content flex_space">
+        <div class="content flex flex-nav">
             <div class="logo">
                 <img src="img/logo2.png" alt="" style="height: 10vh; padding: 0; margin: 0;">
             </div>
@@ -26,18 +25,16 @@
                <li><a href="#home">Home</a></li>
                <li><a href="#about">about</a></li>
                <li><a href="#rooms">rooms</a></li>
-               <li><a href="#pages">pages</a></li>
-               <li><a href="#news">news</a></li>
-               <li><a href="#contact">contact</a></li>
-               <li><i class="fa fa-search" ></i></li>
-                <li><button class="primary-btn">BOOK NOW</button></li>
+               <li><a href="#services">services</a></li>
+               <li><a href="#reviews">reviews</a></li>
+                <li><button href="#book" class="primary-btn" id="book-btn">BOOK NOW</button></li>
             </ul>
-            <span class="fa fa-bars"></span>
+            <span class="fa fa-bars" id="bars"></span>
            </div>
         </div>
     </header>
     <!-- home -->
-       <section class="home">
+       <section class="home" id="home">
         <div class="content">
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -107,8 +104,8 @@
          }
      })
      </script>
-
-     <section class="book">
+<!-- book -->
+     <section class="book" id="book">
         <div class="container flex_space">
             <div class="text">
                 <h1><span>Book</span> Your Rooms</h1>
@@ -130,8 +127,8 @@
 
 <!-- display section -->
 
-     <section class="about top">
-        <div class="container flex">
+     <section class="about top" id="about">
+        <div class="container flex flex-reset">
             <div class="left">
                 <div class="heading">
                     <h1>WELCOME</h1>
@@ -149,7 +146,7 @@
      </section>
 
 <!-- rooms -->
-     <section class="rooms">
+     <section class="rooms" id="rooms">
         <div class="container top">
             <div class="heading">
                 <h1>EXPLORE</h1>
@@ -327,7 +324,7 @@
 
 <!-- rooms -->
 <!-- services -->
-  <section class="services top" style="margin: 40px;">
+  <section class="services top" id="services" style="margin: 40px;">
     <div class="container">
         <div class="heading">
             <h1>SERVICES</h1>
@@ -371,7 +368,7 @@
   </section>
 <!-- services -->
 <!-- Customer -->
-<section class="customer top">
+<section class="customer top " id="reviews">
     <div class="container">
         <div class="owl-carousel owl-carousel1 owl-theme">
 <div class="item">
@@ -407,41 +404,7 @@
 
 
 
-     <footer>
-        <div class="container grid">
-            <div class="box">
-               <div> <img src="img/logo2.png" alt="#">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, nam, natus ipsa error, exercitationem doloribus quam deserunt veritatis sunt quo tempora animi at hic deleniti qui repellat amet veniam laborum quas et autem odit quis? Fugit consequuntur totam aliquam sit praesentium tenetur. Impedit sunt illum delectus illo laudantium est nostrum!</p>
-                <div class="icon">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-youtube"></i>
-                </div></div>
-            </div>
-                <div class="box">
-                    <h2>Links</h2>
-                    <ul>
-                        <li>Company History</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Services</li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h2>Reach To Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis reiciendis, iste quaerat quasi nisi quidem voluptate obcaecati aut totam praesentium!</p>
-                <i class="fa fa-location-dot"></i>
-                <label>201, LKG Street, Mumbai-57, Maharashtra</label>
-                <br>
-               <i class="fa fa-phone">  </i> <label>022-253-5687</label><br>
-               <i class="fa fa-envelope"></i> <label>  Romohotels@yahoo.com </label> 
-               
-               </div>
-            </div>
-        </div>
-     </footer>
+  
      <div class="legal">
         <p class="container">
 Copyright (c) 2023 Copyright Holder All Rights Reserved 
@@ -449,6 +412,8 @@ Copyright (c) 2023 Copyright Holder All Rights Reserved
      </div>
 
 <script src="https://kit.fontawesome.com/693952c9e7.js" crossorigin="anonymous">
+    
 </script>
+<script src="scripts.js"></script>
 </body>
 </html>
