@@ -67,6 +67,7 @@ header img {
 }
 header ul {
   display: inline-block;
+  transition: 0.5s;
 }
 header ul li {
   display: inline-block;
@@ -76,7 +77,6 @@ header ul li {
 header ul li a {
   color: #000;
   margin: 0 10px;
-  transition: 0.5s;
 }
 header ul li a:hover {
   color: #ff731d;
@@ -258,6 +258,7 @@ h1 {
   padding: 20px;
   cursor: pointer;
 }
+
 .services .box .text {
   padding: 30px 0;
   border: 1px dashed #fff;
@@ -382,9 +383,30 @@ footer label {
   body {
     width: 100vw;
   }
+  header {
+    height: 3rem;
+  }
+  header .content {
+    height: 3rem;
+    align-items: center;
+  }
+  header .logo {
+    height: 3rem;
+  }
+  header img {
+    height: 100%;
+    margin: 0;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, fr);
+    width: 100%;
+  }
+
   header ul {
     position: absolute;
-    top: 70px;
+    top: 3rem;
     display: none;
     left: 0;
     width: 100%;
@@ -436,6 +458,22 @@ footer label {
     height: auto;
     object-fit: cover;
   }
+  .primary-btn,
+  .secondary-btn {
+    padding: 8px 20px;
+  }
+  .home .text h1 {
+    font-size: 40px;
+  }
+  .home .text p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+  }
+  .home .text {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -452,3 +490,6 @@ footer label {
     padding: 0;
   }
 }
+/* @media screen and (max-width: ) {
+  
+} */
