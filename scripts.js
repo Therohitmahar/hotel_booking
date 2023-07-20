@@ -4,6 +4,7 @@ let bookBtn = document.getElementById("book-btn")
 let checkAvailabilty = document.getElementById("checkAvailabilty")
 let allLinks = document.querySelectorAll("li a")
 
+
 bars.onclick = () => {
     if (menulist.style.display == "block") {
 
@@ -14,6 +15,8 @@ bars.onclick = () => {
 bookBtn.onclick = (e) => {
     e.preventDefault();
     document.querySelector("#book").scrollIntoView();
+    menulist.style.display = "none"
+
 }
 checkAvailabilty.onclick = (e) => {
     e.preventDefault();
