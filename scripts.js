@@ -3,6 +3,8 @@ let menulist = document.getElementById("menulist")
 let bookBtn = document.getElementById("book-btn")
 let checkAvailabilty = document.getElementById("checkAvailabilty")
 let allLinks = document.querySelectorAll("li a")
+let aboutSpan = document.getElementById("aboutSpan")
+let aboutBtn = document.getElementById("aboutBtn")
 
 
 bars.onclick = () => {
@@ -26,3 +28,11 @@ allLinks.forEach(link => {
         menulist.style.display = "none"
     }
 })
+aboutBtn.onclick = () => {
+
+    if (aboutSpan.style.display == "block") {
+
+        aboutSpan.style.display = "none"
+    } else
+        aboutSpan.style.display = "block"
+}

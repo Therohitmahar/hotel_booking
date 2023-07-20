@@ -219,7 +219,10 @@ h1 {
   border-top: none;
   padding: 30px;
 }
-
+#aboutSpan {
+  display: none;
+  animation: 20s;
+}
 .rooms i {
   font-size: 12px;
   color: #fbb234;
