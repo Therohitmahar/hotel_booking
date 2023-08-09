@@ -1,4 +1,6 @@
+
 let bars = document.getElementById("bars")
+
 let menulist = document.getElementById("menulist")
 let bookBtn = document.getElementById("book-btn")
 let checkAvailabilty = document.getElementById("checkAvailabilty")
@@ -14,20 +16,25 @@ bars.onclick = () => {
     } else
         menulist.style.display = "block"
 }
+
 bookBtn.onclick = (e) => {
     e.preventDefault();
     document.querySelector("#book").scrollIntoView();
-    menulist.style.display = "none"
-
 }
 checkAvailabilty.onclick = (e) => {
     e.preventDefault();
 }
+let x = window.matchMedia("screen and (max-width:768px)");
 allLinks.forEach(link => {
+
     link.onclick = () => {
-        menulist.style.display = "none"
+        if (x.matches) {
+            console.log(x.matches);
+            menulist.style.display = "none";
+        }
     }
-})
+});
+
 aboutBtn.onclick = () => {
 
     if (aboutSpan.style.display == "block") {
@@ -36,3 +43,4 @@ aboutBtn.onclick = () => {
     } else
         aboutSpan.style.display = "block"
 }
+

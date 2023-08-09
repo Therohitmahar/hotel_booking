@@ -16,6 +16,21 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="login-form">
+     <aside>
+
+            <section>
+                <h2>Sign Up</h2>
+                <input type="email"  placeholder="Email" id="email" required/>
+                <input type="password" id="password" placeholder="Password" required />
+                <div>
+                    <button id="logIn">Log In</button>
+                    <button id="signUp">Sign Up</button>
+            </div>
+            <i id="cross" class="fa-regular fa-circle-xmark"></i>
+        </section>
+     </aside>
+    </div>
     <header>
         <div class="content flex flex-nav">
             <div class="logo">
@@ -28,11 +43,13 @@
                <li><a href="#rooms">rooms</a></li>
                <li><a href="#services">services</a></li>
                <li><a href="#reviews">reviews</a></li>
+               <li id="profile"><i class="fa-solid fa-user"></i></li>
                 <li><button href="#book" class="primary-btn" id="book-btn">BOOK NOW</button></li>
             </ul>
             <span class="fa fa-bars" id="bars"></span>
            </div>
         </div>
+    
     </header>
     <!-- home -->
        <section class="home" id="home">
@@ -78,7 +95,9 @@
                
             </div>
         </div>
-       </section>        
+       
+    </section>
+
     <!-- home -->
 
 
@@ -413,6 +432,9 @@ Copyright (c) 2023 Copyright Holder All Rights Reserved
 <script src="https://kit.fontawesome.com/693952c9e7.js" crossorigin="anonymous">
     
 </script>
-<script src="scripts.js"></script>
+
+<script src="scripts.js" type="module"></script>
+<script src="firebase.js" type="module"></script>
+
 </body>
 </html>
